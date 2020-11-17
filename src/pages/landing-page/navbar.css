@@ -1,0 +1,37 @@
+.navigation-color{
+    background-color: #F6F5FB!important;
+}
+
+.legado-logo{
+    width: 30%;
+    height:80%;
+    align-items: center;
+    margin-left: 40%;
+    margin-right: 20%;
+}
+
+.text-style{
+   background-color: #F6F5FB;
+   font-family: operetta-18, serif;
+   font-weight: 500;
+   font-style: normal;
+   font-size: 25px;
+}
+
+.button-style{ 
+    background-color: #14DC93;
+    width: 100px;
+    color: #2B32BE;
+    box-shadow: #14DC93;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.button-style:hover {
+    background-color: #FB793F;
+    box-shadow: 0px 5px 5px#FB793F;
+    color: #fff;
+    transform: translateY(-7px);
+  }

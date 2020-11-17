@@ -1,0 +1,17 @@
+.owl{
+    height: 711px;
+    width: 600px;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background: var(#F6F5FB);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--teal);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--orange);
+}
