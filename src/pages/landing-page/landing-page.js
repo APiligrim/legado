@@ -1,6 +1,6 @@
 import React from 'react'; 
 import  {Container, Row, Col} from 'react-bootstrap';
-import  Menu from './navbar.js'
+import  Navbar from './navbar.js'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import owl from './img/owl.png';
@@ -10,7 +10,7 @@ function LandingPage() {
     return (
         <div className='LandingPage'>
             <header>
-                <Menu/>     
+                <Navbar/>     
             </header>           
             <Container>
                 {/* Columns are always 50% wide, on mobile and desktop */}
