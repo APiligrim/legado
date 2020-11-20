@@ -1,9 +1,31 @@
-*{
-    box-sizing: border-box; 
-    margin: 0; 
-    padding:0; 
-    font-family: operetta-18, serif;
-    
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.App {
+    font-family: operetta-12, serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  --top-spacing: 100px;
+  scroll-padding-top: var(--top-spacing);
+}
+
+.body{ 
+  margin: var(--top-spacing) auto;
+
+  max-width: 400px;
+  padding: 0 20px;
+  font-family: operetta-12, serif;
 }
 
 
