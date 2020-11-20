@@ -4,13 +4,22 @@
   font-weight: 400;
   font-style: normal;
   text-align: center;
+  background-color: #F6F5FB;
 }
 
 a {
   text-decoration: none;
   font-size: 20px;
-  color: white;
+  color: #2B32BE;
 }
+
+a:hover{
+  color: #FB793F;
+  text-decoration: none;
+
+}
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -29,6 +38,7 @@ html{
   padding: 0 20px;
   font-family: operetta-12, serif;
   font-size: 20px;
+  
 }
 
 ::-webkit-scrollbar {
@@ -42,4 +52,101 @@ html{
 }
 ::-webkit-scrollbar-thumb:hover {
   background: var(--orange);
+}
+
+/* Section 1 */
+
+/* Columns  */
+/* display: grid is changing the behavior of the .hero element to be a grid container.
+ That means the elements inside .hero are now grid items. */
+.hero{ 
+  /* background: url('./pages/landing-page/img/background1.png'); */
+ margin-top: -6%;
+  background-size: cover;
+  padding: 4rem 2rem;
+
+  /* Grid styles */
+  display: grid;
+  align-items: center;
+   /* this is the same as grid-template-rows: 300px 300px; it will create 2 columns with minmax() calculating 
+  automatically the size of the track, based on the width of the viewport,
+   */
+   
+   /* auto-fit keyword allows us to wrap our columns into rows when there’s not enough space in our viewport to fit the 240px minimum value without overflowing the content. */
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.owl{
+  height: 80%;
+  width: 70%;
+}
+
+h1{
+  color: #2B32BE; 
+  font-size: 50px;
+  font-style: bold;
+  font-weight: 900;
+
+}
+h1.main-title{
+  color: #2B32BE; 
+  font-size: 40px;
+  font-style: bold;
+  font-weight: 900;
+  text-align: left;
+  margin-left: 20%;
+}
+
+.button-text{
+  font-weight: bold;
+  color: #2B32BE;
+}
+
+/* About section */
+.hero2{ 
+  /* background: url('./pages/landing-page/img/background1.png'); */
+ /* margin-top: -6%; */
+  background-size: cover;
+  padding: 4rem 2rem;
+
+  /* Grid styles */
+  display: grid;
+  align-items: center;
+   /* this is the same as grid-template-rows: 300px 300px; it will create 2 columns with minmax() calculating 
+  automatically the size of the track, based on the width of the viewport,
+   */
+   
+   /* auto-fit keyword allows us to wrap our columns into rows when there’s not enough space in our viewport to fit the 240px minimum value without overflowing the content. */
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.section-title{ 
+  color: #2B32BE; 
+  font-size: 40px;
+  font-style: bold;
+  font-weight: 900;
+}
+
+
+/* How it works section*/
+/* About section */
+.hero3{ 
+  /* background: url('./pages/landing-page/img/background1.png'); */
+ /* margin-top: -6%; */
+  background-size: cover;
+  padding: 4rem 2rem;
+
+  /* Grid styles */
+  display: grid;
+  align-items: center;
+   /* this is the same as grid-template-rows: 300px 300px; it will create 2 columns with minmax() calculating 
+  automatically the size of the track, based on the width of the viewport,
+   */
+   
+   /* auto-fit keyword allows us to wrap our columns into rows when there’s not enough space in our viewport to fit the 240px minimum value without overflowing the content. */
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.center-text{
+  text-align: center;
 }

@@ -4,15 +4,17 @@
   left: 0;
   width: 100%;
   display: flex;
-  background: #2B32BE;
+  background: #F6F5FB;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 40px;
+  padding: 0px 100px;
   height: 80px;
+  font-size: 35px;
+  font-weight: bold;
 }
 .legado-logo{ 
-  width: 50px;
-  height: 50px;
+  width: 200px;
+  height: 64px;
 }
 .logo-nav {
   display: flex;
@@ -43,11 +45,7 @@
   display: none;
 }
 
-.option :hover {
-  color: #FB793F;
-  text-decoration: none;
 
-}
 .signin-up {
   display: flex;
   padding: 0px 5px;
@@ -63,25 +61,39 @@
 .sign-in:hover {
   color: #FB793F;
   text-decoration: none;
+  transition: opacity 2.85s, transform 0.85s;
+ 
 }
 .signup-btn {
-  padding: 10px 10px;
+  padding: 10px 40px;
   height: 2.4rem;
   border-radius: 3px;
-  background: #FB793F;
-  color: white;
+  background: #14DC93;
+  color: #2B32BE;
   cursor: pointer;
   align-items: center;
   text-decoration: none;
   transition-duration: 0.4s;
+  box-shadow: 0px 5px 2px #14DC93;
+ 
 }
 
 .signup-btn:hover{
   text-decoration: none;
-  color: #2B32BE;
-  background-color: #14DC93;
+  color:#2B32BE;
+  background-color: #FB793F;
+  box-shadow: 0px 5px 2px #FB793F;
   
 }
+
+
+.option:hover {
+  color: #FB793F;
+  text-decoration: none;
+  transition: opacity 2.85s, transform 0.85s;
+}
+
+
 /*Desktop View*/
 @media (max-width: 646px) {
   /*Mobile View */

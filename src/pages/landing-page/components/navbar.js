@@ -4,7 +4,7 @@ import React, { useState } from "react";
  import { ReactComponent as MenuIcon } from "../img/x.svg";
 //import {ReactComponent as logo} from "./img/logo";
 import "./navbar.css";
- import logo from "../img/logo.png";
+ import logo from "../img/legadologo.png";
 
 const Header = () => {
   const [click, setClick] = useState(false);
@@ -19,24 +19,24 @@ const Header = () => {
         </a>
       </div>
         <ul className={click ? "nav-options active" : "nav-options"}>
-          <li className="option" onClick={closeMobileMenu}>
+          <li className="option effect-underline" onClick={closeMobileMenu}>
             <a href="#">About Us</a>
           </li>
-          <li className="option" onClick={closeMobileMenu}>
+          <li className="option effect-underline" onClick={closeMobileMenu}>
             <a href="#">How it Works</a>
           </li>
-          <li className="option" onClick={closeMobileMenu}>
+          <li className="option effect-underline" onClick={closeMobileMenu}>
             <a href="#">Pricing</a>
           </li>
 
-          <li className="option mobile-option" onClick={closeMobileMenu}>
+          <li className="option mobile-option " onClick={closeMobileMenu}>
             <a href="#">Contact</a>
           </li>
 
         </ul>
       </div>
       <ul className="signin-up">
-        <li className="sign-in" onClick={closeMobileMenu}>
+        <li className="sign-in " onClick={closeMobileMenu}>
           <a href="#">Contact</a>
         </li>
         <li onClick={closeMobileMenu}>

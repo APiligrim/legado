@@ -7,7 +7,7 @@
 
 a {
   text-decoration: none;
-  color: white;
+  color: #2B32BE;
 }
 * {
   box-sizing: border-box;
@@ -30,8 +30,8 @@ html{
 
 
 .owl{
-    height: 711px;
-    width: 600px;
+    height: 411px;
+    width: 300px;
 }
 
 ::-webkit-scrollbar {
