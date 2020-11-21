@@ -150,3 +150,50 @@ h1.main-title{
 .center-text{
   text-align: center;
 }
+
+/* Subject Track Section */
+.track{ 
+  width: 500px;
+  height: 350px;
+}
+
+.hero4{ 
+  background-size: cover;
+  padding: 4rem 2rem;
+
+  /* Grid styles */
+  display: grid;
+  align-items: center;
+   /* this is the same as grid-template-rows: 300px 300px; it will create 2 columns with minmax() calculating 
+  automatically the size of the track, based on the width of the viewport,
+   */
+   
+   /* auto-fit keyword allows us to wrap our columns into rows when there’s not enough space in our viewport to fit the 240px minimum value without overflowing the content. */
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.hero5{ 
+  margin-top: -5%;
+  background-size: cover;
+  padding: 4rem 2rem;
+
+  /* Grid styles */
+  display: grid;
+  align-items: center;
+   /* this is the same as grid-template-rows: 300px 300px; it will create 2 columns with minmax() calculating 
+  automatically the size of the track, based on the width of the viewport,
+   */
+   
+   /* auto-fit keyword allows us to wrap our columns into rows when there’s not enough space in our viewport to fit the 240px minimum value without overflowing the content. */
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+.grow-img{
+  transition: 1s ease;
+}
+
+.grow-img:hover{
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: 1s ease;
+  }

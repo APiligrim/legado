@@ -1,6 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
 import Header from "./pages/landing-page/components/navbar";
+import Subscribe from './pages/landing-page/components/subscribe.js'
 import "./App.css";
+
 import owl from './pages/landing-page/img/owl.png';
 import books from './pages/landing-page/img/books.gif';
 import skills from './pages/landing-page/img/skills.gif';
@@ -9,7 +11,27 @@ import liberalArts from './pages/landing-page/img/liberal-arts.png';
 import creativeArts from './pages/landing-page/img/creative-arts.png';
 import business from './pages/landing-page/img/business.png';
 import stem from './pages/landing-page/img/stem.png';
-export default function App() {
+
+
+class App extends Component {
+  
+  constructor(props) {
+    super(props);
+    this.state = {
+      email: '',
+      loading: false
+    }
+  }
+
+
+
+  handleOnChangeEmail = email => {
+    this.setState({
+      email: email
+    })
+  }
+
+  render(){
   return (
     <div className="App">
       <Header />
@@ -54,28 +76,32 @@ export default function App() {
       <div> 
         <h1 className="section-title">Selection of <br/> Subject Tracks</h1>
 
-        <div> 
+        <div className="hero4"> 
           <article> 
-          <img className="steps" src={business}></img>
+          <img className="track grow-img" src={business}></img>
           </article>
           <article> 
-          <img className="steps" src={stem}></img>
+          <img className="track grow-img" src={stem}></img>
           </article>
         </div>
-        <div> 
+        <div className="hero5"> 
         <article> 
-        <img className="steps" src={liberalArts}></img>
+        <img className="track grow-img" src={liberalArts}></img>
         </article>
         <article> 
-        <img className="steps" src={creativeArts}></img>
+        <img className="track grow-img" src={creativeArts}></img>
         </article>
       </div>
       </div>
 
-
+      <Subscribe email={this.state.email} handleOnChangeEmail={this.handleOnChangeEmail} />
     </div>
   );
 }
+}
+
+export default App;
+
 // <img src={logo} className="App-logo" alt="logo" />
 
 // <div> he standard Lorem Ipsum passage, used since the 1500s
