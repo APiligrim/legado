@@ -2,9 +2,11 @@ import React, { Component } from "react";
 import {apiUrl, notify} from './helpers';
 import axios from 'axios';
 import Header from "./pages/landing-page/components/navbar";
-import Subscribe from './pages/landing-page/components/subscribe.js'
+//import Subscribe from './pages/landing-page/components/subscribe.js'
+import SubscribeNoMail from './pages/landing-page/components/subscribe-nomail.js'
 import "./App.css";
-import Footer from './pages/landing-page/components/footer.js'
+
+import Footer from './pages/landing-page/components/footer.js';
 import owl from './pages/landing-page/img/owl.png';
 import books from './pages/landing-page/img/books.gif';
 import skills from './pages/landing-page/img/skills.gif';
@@ -13,7 +15,7 @@ import liberalArts from './pages/landing-page/img/liberal-arts.png';
 import creativeArts from './pages/landing-page/img/creative-arts.png';
 import business from './pages/landing-page/img/business.png';
 import stem from './pages/landing-page/img/stem.png';
-
+import discord from './pages/landing-page/img/discord.png';
 class App extends Component {
   constructor(props) {
     super(props);
@@ -110,8 +112,14 @@ class App extends Component {
         </article>
       </div>
       </div>
-      <Subscribe email={this.state.email}  handleOnChangeEmail={this.handleOnChangeEmail} handleSendEmail={this.handleSendEmail}/>
-     
+      
+      <SubscribeNoMail/>
+      <div>
+        <article> 
+        <img className="grow-img" src={discord}></img>
+        </article>
+      </div>
+      
       <Footer/>
     </div>
   );
@@ -119,3 +127,4 @@ class App extends Component {
 }
 export default App;
 
+// <Subscribe email={this.state.email}  handleOnChangeEmail={this.handleOnChangeEmail} handleSendEmail={this.handleSendEmail}/>

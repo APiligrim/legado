@@ -6,7 +6,6 @@ import './subscribe.css'
 import 'antd/dist/antd.css';
 import validator from 'validator';
 
-
 const Subscribe =({email, handleOnChangeEmail, handleSendEmail})=> {
     return(
 
@@ -26,7 +25,6 @@ const Subscribe =({email, handleOnChangeEmail, handleSendEmail})=> {
 
     );
 }
-
 
 //check the exact data type of the files
 Subscribe.propTypes= {

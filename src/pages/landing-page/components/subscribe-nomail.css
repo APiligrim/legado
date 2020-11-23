@@ -1,0 +1,85 @@
+.widget_blog_subscription {
+    display: block;
+    margin: 50px auto;
+    width: 60%;
+    max-width: 490px;
+    min-width: 320px;
+    position: relative;
+    overflow: hidden;
+    background-color: #F6F6F2;
+    border: #2B32BE;
+    border-width: 15px;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 7px #72E6BE);
+    box-shadow: palegreen;
+  }
+
+
+  .widget_blog_subscription p {
+    margin: 0;
+    text-align: center;
+  }
+  .widget_blog_subscription p:first-child {
+    margin: 40px 15px 0;
+    color: #2B32BE;
+    font-weight: 600;
+    text-align: center;
+    font-size: 40px;
+    font-family: operetta-12, serif;
+    letter-spacing: 1px;
+    
+  }
+  .widget_blog_subscription input[type="text"] {
+    margin: 45px 30px;
+    color: #999;
+    padding: 25px 15px !important;
+    text-align: center;
+    width: 100% !important;
+    max-width: calc(100% - 90px);
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: #FFDE3E;
+  }
+  .widget_blog_subscription input[type="text"]::-webkit-input-placeholder {
+      color: #2B32BE;
+  }
+  .widget_blog_subscription input[type="text"]:-moz-placeholder {
+      color:#2B32BE;
+  }
+  .widget_blog_subscription input[type="text"]::-moz-placeholder {
+      color:#2B32BE;
+  }
+  .widget_blog_subscription input[type="text"]:-ms-input-placeholder {
+      color: #2B32BE;
+  }
+  .widget_blog_subscription input[type="submit"] {
+    margin: 0;
+    background-color: #14DC93;
+    color: #2B32BE;
+    padding: 25px 15px !important;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    outline: none;
+    border: 0;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    -webkit-transition: .1s all ease-in-out;
+    -moz-transition: .1s all ease-in-out;
+    -o-transition: .1s all ease-in-out;
+    transition: .1s all ease-in-out;
+  }
+  .widget_blog_subscription input[type="submit"]:hover {
+    background-color: #FB793F;
+  }
+  
+  @media (max-width: 685px) {
+    .widget_blog_subscription p:first-child {
+        font-size: 30px;
+        font-family: operetta-12, serif;
+        letter-spacing: 1px; 
+      }
+  }
