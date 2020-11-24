@@ -12,7 +12,7 @@ const SubscribeNoMail= ()=>{
     <section class="widget widget_blog_subscription">
         <form action="https://subscribe.wordpress.com" method="post" accept-charset="utf-8" id="subscribe-blog">
             <p>Subscribe to Stay Updated</p>
-            <p className='small-text'>Ed Ut Perspiciatis Unde Omnis Iste Natus Error Sit Voluptatem Accusantium Doloremque Laudantium, </p>
+            <p className='small-text'>Sign up to get updates on new projects,<br/> learning opportunities, events and more!</p>
             <p>
             <input type="text" name="email" style={style} placeholder="Enter your email address" value="" id="subscribe-field"/>
             </p>

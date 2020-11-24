@@ -4,7 +4,17 @@
   font-weight: 400;
   font-style: normal;
   text-align: center;
-  background-color: #F6F5FB;
+   background-color: #F6F5FB; 
+  /* background-image: url('./pages/landing-page/img/animated-background.svg'); */
+  /* background-image: url(../static/login-bg.jpg); */
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 a {
@@ -19,11 +29,12 @@ a:hover{
 
 }
 
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
+
 }
 
 html{
@@ -33,7 +44,7 @@ html{
 
 .body{ 
   margin: var(--top-spacing) auto;
-
+  
   max-width: 400px;
   padding: 0 20px;
   font-family: operetta-12, serif;
@@ -54,6 +65,18 @@ html{
   background: var(--orange);
 }
 
+p{
+  font-size: 20px;
+}
+p.paragraph-text{
+  margin-top: 30%;
+  color: white;
+  font-size: 20px;
+}
+
+.about-title{
+  margin-top: 30%;
+}
 /* Section 1 */
 
 /* Columns  */
@@ -104,8 +127,24 @@ h1.main-title{
 
 /* About section */
 .hero2{ 
-  /* background: url('./pages/landing-page/img/background1.png'); */
+  background: url('./pages/landing-page/img/slide2.png'); 
  /* margin-top: -6%; */
+ /* background-color: red; */
+  margin-top: -21%;
+  background-size: 100%;
+   /* Background image is centered vertically and horizontally at all times */
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+/* Background image is fixed in the viewport so that it doesn't move when 
+the content's height is greater than the image's height */
+  height: 520px;
+ /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #F6F5FB;
+ /* height: 550px; */
   background-size: cover;
   padding: 4rem 2rem;
 
@@ -115,7 +154,6 @@ h1.main-title{
    /* this is the same as grid-template-rows: 300px 300px; it will create 2 columns with minmax() calculating 
   automatically the size of the track, based on the width of the viewport,
    */
-   
    /* auto-fit keyword allows us to wrap our columns into rows when there’s not enough space in our viewport to fit the 240px minimum value without overflowing the content. */
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
@@ -126,7 +164,6 @@ h1.main-title{
   font-style: bold;
   font-weight: 900;
 }
-
 
 /* How it works section*/
 /* About section */
@@ -198,6 +235,23 @@ h1.main-title{
   transition: 1s ease;
   }
 
+.discord{
+    background-size: cover;
+  padding: 2rem 5rem;
+
+  /* Grid styles display: flexbox;*/
+  
+  align-items: center;
+   /* this is the same as grid-template-rows: 300px 300px; it will create 2 columns with minmax() calculating 
+  automatically the size of the track, based on the width of the viewport,
+   */
+   
+   /* auto-fit keyword allows us to wrap our columns into rows when there’s not enough space in our viewport to fit the 240px minimum value without overflowing the content. */
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  width: 450px; 
+  height:200px;
+  cursor: pointer;
+}
   @media (max-width: 1062px) {
     .track{ 
       width: 300px;
@@ -227,4 +281,6 @@ h1.main-title{
       width: 350px;
       height: 260px;
     }
+
+
   }

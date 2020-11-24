@@ -62,9 +62,9 @@ class App extends Component {
       <h3 style={{ padding: "40px" }}>Thanks For Reading!</h3>
       
       <div class="hero main-title">
-        <h1> Legado Educational <br/>
-        Platform is Here <br/>
-        <a className="signup-btn button-text"> Get Started </a> 
+        <h1> Real World Projects <br/>
+        For Your Courses <br/>
+        <a className="signup-btn button-text"> Learn More</a> 
         </h1>
         
         <article> 
@@ -73,9 +73,10 @@ class App extends Component {
       </div>
 
       <div class="hero2"> 
-        <h1 className="section-title">About Legado</h1>
-        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, 
-        similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.  </p>
+        <h1 className="section-title about-title">About Legado</h1>
+        <p className="paragraph-text">Legado walks you through exercises built for your college classes so you can make the most of your course through hands-on learning. 
+        When you finish a Legado project, you'll not only have a better understanding of your course content but also have a new addition 
+         to your portfolio that shows your mastery of in-demand skills.</p>
       </div>
 
       <div> 
@@ -116,7 +117,7 @@ class App extends Component {
       <SubscribeNoMail/>
       <div>
         <article> 
-        <img className="grow-img" src={discord}></img>
+            <img className="hero6 discord grow-img" src={discord}></img>
         </article>
       </div>
       
