@@ -2,8 +2,9 @@ import React, { Component } from "react";
 import {apiUrl, notify} from './helpers';
 import axios from 'axios';
 import Header from "./pages/landing-page/components/navbar";
-//import Subscribe from './pages/landing-page/components/subscribe.js'
-import SubscribeNoMail from './pages/landing-page/components/subscribe-nomail.js'
+
+//import SubscribeNoMail from './pages/landing-page/components/subscribe-nomail.js'
+//import MailchimpEmail from './pages/landing-page/components/mailchimp-form.js'
 import "./App.css";
 
 import Footer from './pages/landing-page/components/footer.js';
@@ -16,43 +17,9 @@ import creativeArts from './pages/landing-page/img/creative-arts.png';
 import business from './pages/landing-page/img/business.png';
 import stem from './pages/landing-page/img/stem.png';
 import discord from './pages/landing-page/img/discord.png';
+import SubscribeNoMail from "./pages/landing-page/components/subscribe-nomail";
+
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      email: '',
-      loading: false
-    }
-  }
-  handleLoadingState = loading => {
-    this.setState({loading: loading});
-  }
-
-  handleSendEmail = email =>{
-    this.handleLoadingState(true)
-    axios.post(`${apiUrl}/subscribe`, {
-      email: email
-    }).then(res => {
-      if(res.data.success) {
-        notify('success', 'Subscribed!', res.data.success);
-        this.setState({email: ''});
-        this.handleLoadingState(false);
-      } else {
-        notify('error', 'Unable to subscribe!', res.data.error);
-        this.handleLoadingState(false);
-      }
-
-    }).catch(error => {
-      // check if the post request worked otherwise it will impact the user
-      notify('error', 'Error. Please try again later.' , error.message);
-      this.handleLoadingState(false)
-    });
-  }
-  handleOnChangeEmail = email => {
-    this.setState({
-      email: email
-    })
-  }
 
   render(){
   return (
@@ -89,7 +56,7 @@ class App extends Component {
             <img className="steps" src={skills}></img>
             </article>
             <article> 
-            <img className="steps" src={community}></img>
+            <img className="steps step3" src={community}></img>
             </article>
           </div>
       </div>
@@ -128,4 +95,3 @@ class App extends Component {
 }
 export default App;
 
-// <Subscribe email={this.state.email}  handleOnChangeEmail={this.handleOnChangeEmail} handleSendEmail={this.handleSendEmail}/>

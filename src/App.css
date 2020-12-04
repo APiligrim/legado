@@ -68,6 +68,7 @@ html{
 p{
   font-size: 20px;
 }
+
 p.paragraph-text{
   margin-top: 30%;
   color: white;
@@ -268,19 +269,153 @@ the content's height is greater than the image's height */
       width: 250px;
       height: 300px;
     }
+    .hero2{ 
+      background: url('./pages/landing-page/img/medium.png'); 
+      margin-top: -21%;
+      background-size: 100%;
+       /* Background image is centered vertically and horizontally at all times */
+      background-position: center;
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      height: 520px;
+      /* Set a background color that will be displayed
+          while the background image is loading */
+       background-color: #F6F5FB;
+      /* height: 550px; */
+       background-size: cover;
+       padding: 4rem 2rem;
+     
+       /* Grid styles */
+       display: grid;
+       align-items: center;
+        /* this is the same as grid-template-rows: 300px 300px; it will create 2 columns with minmax() calculating 
+       automatically the size of the track, based on the width of the viewport,
+        */
+        /* auto-fit keyword allows us to wrap our columns into rows when there’s not enough space in our viewport to fit the 240px minimum value without overflowing the content. */
+       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
   }
 
   @media (max-width: 671px) {
+    .hero2{ 
+      background: url('./pages/landing-page/img/671.png'); 
+      margin-top: -21%;
+      background-size: 100%;
+       /* Background image is centered vertically and horizontally at all times */
+      background-position: center;
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      height: 604px;
+      /* Set a background color that will be displayed
+          while the background image is loading */
+       background-color: #F6F5FB;
+      /* height: 550px; */
+       background-size: cover;
+       padding: 4rem 2rem;
+     
+       /* Grid styles */
+       display: grid;
+       align-items: center;
+        /* this is the same as grid-template-rows: 300px 300px; it will create 2 columns with minmax() calculating 
+       automatically the size of the track, based on the width of the viewport,
+        */
+        /* auto-fit keyword allows us to wrap our columns into rows when there’s not enough space in our viewport to fit the 240px minimum value without overflowing the content. */
+       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+    p.paragraph-text{
+      margin-top: 60%;
+      color: white;
+      font-size: 20px;
+    }
+    img.owl{
+      height: 300px;
+      width: 250px;
+    }
+    h1{
+      font-size: 40px;
+    }
+    img.steps.step3{
+      align-items: center;
+      margin-left: 45%;
+    }
+    .about-title{
+      color: white;
+      margin-top: 30%;
+    }
+    .hero5{ 
+      margin-top: -22%;
+    }
+    h1.section-title.center-text{
+      margin-top: 5%;
+    }
     .track{ 
       width: 250px;
       height: 200px;
     }
   }
-  @media (max-width: 539px) {
+
+  @media (max-width: 773px) {
+
+    img.steps.step3{
+      align-items: center;
+      margin-left: 65%;
+    }
+  }
+  @media (max-width: 540px) {
     .track{ 
       width: 350px;
       height: 260px;
     }
-
+    img.steps.step3{
+      align-items: center;
+      margin-left: 0%;
+    }
+    .hero2{ 
+      background: url('./pages/landing-page/img/mobile.png'); 
+      margin-top: -21%;
+      background-size: 100%;
+       /* Background image is centered vertically and horizontally at all times */
+      background-position: center;
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      height: 520px;
+      /* Set a background color that will be displayed
+          while the background image is loading */
+       background-color: #F6F5FB;
+      /* height: 550px; */
+       background-size: cover;
+       padding: 4rem 2rem;
+     
+       /* Grid styles */
+       display: grid;
+       align-items: center;
+        /* this is the same as grid-template-rows: 300px 300px; it will create 2 columns with minmax() calculating 
+       automatically the size of the track, based on the width of the viewport,
+        */
+        /* auto-fit keyword allows us to wrap our columns into rows when there’s not enough space in our viewport to fit the 240px minimum value without overflowing the content. */
+       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+    p.paragraph-text{
+      margin-top: 5%;
+      color: white;
+      font-size: 20px;
+    }
+    
+    .about-title{
+      color: white;
+      margin-top: 25%;
+    }
+    .hero5{ 
+      margin-top: -22%;
+    }
+    h1.section-title.center-text{
+      margin-top: 5%;
+    }
 
   }
