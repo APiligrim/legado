@@ -10,11 +10,11 @@ const SubscribeNoMail= ()=>{
     return(
     <div> 
     <section class="widget widget_blog_subscription">
-        <form action="https://gmail.us7.list-manage.com/subscribe/post?u=0f064048152fcee5cbb82407a&amp;id=392ce457fe" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        
             <p>Subscribe to Stay Updated</p>
             <p className='small-text'>Sign up to get updates on new projects,<br/> learning opportunities, events and more!</p>
             <MailchimpEmail/>
-        </form>
+       
     </section>
     </div>
     )

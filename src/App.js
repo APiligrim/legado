@@ -8,7 +8,7 @@ import Header from "./pages/landing-page/components/navbar";
 import "./App.css";
 
 import Footer from './pages/landing-page/components/footer.js';
-import owl from './pages/landing-page/img/owl.png';
+import owl from './pages/landing-page/img/owl1.png';
 import books from './pages/landing-page/img/books.gif';
 import skills from './pages/landing-page/img/skills.gif';
 import community from './pages/landing-page/img/community.gif';
@@ -29,7 +29,7 @@ class App extends Component {
       <h3 style={{ padding: "40px" }}>Thanks For Reading!</h3>
       
       <div class="hero main-title">
-        <h1> Real World Projects <br/>
+        <h1 class="main-title"> Real World Projects <br/>
         For Your Courses <br/>
         <a className="signup-btn button-text"> Learn More</a> 
         </h1>
@@ -40,7 +40,7 @@ class App extends Component {
       </div>
 
       <div class="hero2"> 
-        <h1 className="section-title about-title">About Legado</h1>
+        <h1 className="section-title about-title">About <br/> Legado</h1>
         <p className="paragraph-text">Legado walks you through exercises built for your college classes so you can make the most of your course through hands-on learning. 
         When you finish a Legado project, you'll not only have a better understanding of your course content but also have a new addition 
          to your portfolio that shows your mastery of in-demand skills.</p>
