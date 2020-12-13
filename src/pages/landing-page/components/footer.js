@@ -13,7 +13,7 @@ const Footer=() => {
             <img className="logo" src={logoFooter}></img>
             </article>
             <article> 
-            <p class='header-text text pointer'> Contact Us</p>
+            <p id="contact" class='header-text text pointer'> Contact Us</p>
             <p class='p-text text pointer'>legadoteam@gmail.com</p>
             </article>
             <article> 

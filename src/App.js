@@ -24,12 +24,15 @@ class App extends Component {
   render(){
   return (
     <div className="App">
-      <Header />
+      <div class="menu">
+        <Header/>
+      </div>
+     
     
       <h3 style={{ padding: "40px" }}>Thanks For Reading!</h3>
       
       <div class="hero main-title">
-        <h1 class="main-title"> Real World Projects <br/>
+        <h1 id="main" class="main-title"> Real World Projects <br/>
         For Your Courses <br/>
         <a className="signup-btn button-text"> Learn More</a> 
         </h1>
@@ -41,13 +44,13 @@ class App extends Component {
 
       <div class="hero2"> 
         <h1 className="section-title about-title">About <br/> Legado</h1>
-        <p className="paragraph-text">Legado walks you through exercises built for your college classes so you can make the most of your course through hands-on learning. 
+        <p id ="about" className="paragraph-text">Legado walks you through exercises built for your college classes so you can make the most of your course through hands-on learning. 
         When you finish a Legado project, you'll not only have a better understanding of your course content but also have a new addition 
          to your portfolio that shows your mastery of in-demand skills.</p>
       </div>
 
       <div> 
-        <h1 className="section-title center-text"> How it Works</h1>
+        <h1 id="how-it-works" className="section-title center-text"> How it Works</h1>
           <div className="hero3">
             <article> 
             <img className="steps" src={books}></img>

@@ -15,30 +15,26 @@ const Header = () => {
     <div className="logo-nav">
       <div className="logo-container">
         <a href="#">
-          <img className=" legado-logo" src={logo}></img> 
+          <img href="#main" className=" legado-logo" src={logo}></img> 
         </a>
       </div>
         <ul className={click ? "nav-options active" : "nav-options"}>
           <li className="option effect-underline" onClick={closeMobileMenu}>
-            <a href="#">About Us</a>
+            <a href="#about">About Us</a>
           </li>
           <li className="option effect-underline" onClick={closeMobileMenu}>
-            <a href="#">How it Works</a>
-          </li>
-          <li className="option effect-underline" onClick={closeMobileMenu}>
-            <a href="#">Pricing</a>
+            <a href="#how-it-works">How it Works</a>
           </li>
 
-          <li className="option mobile-option " onClick={closeMobileMenu}>
-            <a href="#">Contact</a>
+
+          <li className="option effect-underline " onClick={closeMobileMenu}>
+            <a href="#contact">Contact</a>
           </li>
 
         </ul>
       </div>
       <ul className="signin-up">
-        <li className="sign-in " onClick={closeMobileMenu}>
-          <a href="#">Contact</a>
-        </li>
+
         <li onClick={closeMobileMenu}>
           <a href="" className="signup-btn">
             Sign Up
