@@ -86,6 +86,9 @@ p.paragraph-text{
 .about-title{
   margin-top: 8%;
 }
+.margin-fix{
+  margin-top: 5%;
+}
 /* Section 1 */
 
 /* Columns  */
@@ -317,7 +320,10 @@ the content's height is greater than the image's height */
     font-weight: 900;
     text-align: left;
     margin-left: 20%;
-   
+ 
+  }
+  .margin-fix{
+    margin-top: 5%;
   }
 }
 @media (max-width:1200px){
@@ -351,6 +357,9 @@ the content's height is greater than the image's height */
      */
      /* auto-fit keyword allows us to wrap our columns into rows when there’s not enough space in our viewport to fit the 240px minimum value without overflowing the content. */
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+  .margin-fix{
+    margin-top: 5%;
   }
   h1.main-title{
     color: #2B32BE; 
@@ -598,7 +607,16 @@ the content's height is greater than the image's height */
       
     }
 
-
+    h1.section-title.margin-fix{
+      margin-top: 15%;
+      text-align: center;
+      margin-left: 12%;
+    }
+    h1.project{
+      font-size: 35px;
+      width: 80%;
+      margin-left: 12%;
+    }
   }
 
   @media (max-width: 430px) {
@@ -612,7 +630,7 @@ the content's height is greater than the image's height */
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
-      height: 450px;
+      height: 480px;
     }
 
     
@@ -635,7 +653,7 @@ the content's height is greater than the image's height */
     }
 
     h1.about-title{
-      margin-top: -12%;
+      margin-top: -15%;
     }
     .hero6.discord.grow-img{
       margin-left:-8%;
@@ -643,6 +661,14 @@ the content's height is greater than the image's height */
     .track{ 
       width: 300px;
       height: 200px;
+    }
+    h1.section-title.margin-fix{
+      margin-top: 15%;
+    }
+    h1.project{
+      font-size: 28px;
+      width: 80%;
+      margin-left: 12%;
     }
   }
 
@@ -667,5 +693,13 @@ the content's height is greater than the image's height */
       width: 80%;
       font-size: 30px;
       margin-left: 15%;
+    }
+    h1.section-title.margin-fix{
+      margin-top: 15%;
+    }
+    h1.project{
+      font-size: 28px;
+      width: 80%;
+      margin-left: 12%;
     }
   }

@@ -27,17 +27,16 @@ const Header = () => {
           </li>
 
 
+       
           <li className="option effect-underline " onClick={closeMobileMenu}>
-            <a href="#contact">Contact</a>
+          <a href="#contact">Contact</a>
           </li>
-
         </ul>
       </div>
       <ul className="signin-up">
-
         <li onClick={closeMobileMenu}>
-          <a href="" className="signup-btn">
-            Sign Up
+          <a id="myLink" href="https://legado.thinkific.com/courses/learn-the-basics-of-fred" target="_blank" className="signup-btn">
+            Start Sample Project
           </a>
         </li>
       </ul>

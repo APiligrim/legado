@@ -99,7 +99,7 @@ body{
 }
 
 /*Desktop View*/
-@media (max-width: 1062px) {
+@media (max-width: 1087px) {
   /*Mobile View */
   .header {
     padding: 0px 10px;
