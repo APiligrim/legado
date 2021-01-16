@@ -1,4 +1,15 @@
-# Getting Started with Create React App
+# About Legado📚✏️
+Legado is a web platform for college students that provides collaborative project-based learning using Open Educational Resoures. This was a quick MVP that I built and designed for my entrepreneurship class in Fall 2020. 
+
+# Check Out the Live Site: [LEGADO DEMO](https://legado.netlify.app/)
+
+![Recordit GIF](https://media.giphy.com/media/3sjqQ4pMn38aWDpFMg/giphy.gif)
+
+Concept for mobile app:  
+![Recordit GIF](https://media.giphy.com/media/xpsh5Qng0IhhDWJy3l/giphy.gif)
+
+# How to Run this Project Locally
+### Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
